@@ -8,10 +8,39 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Survey Form with Bootstrap!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <header class="container-fluid">
+          <div class="container">
+            <h1 id="title">Hello, Welcome to our survey!</h1>
+            <p id="description">Please give the desired information</p>
+          </div>
+      </header>
+    
+    <div id="main" class="container">
+        <form id="survey-form">
+            <div class="form-row">
+                <div class="col">
+                    <label for="name">Name</label> 
+                    <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name">
+                </div>
+                <div class="col">
+                    <label for="last-name">Last name</label> 
+                    <input type="text" id="last-name" name="last-name" class="form-control form-control-lg" placeholder="Your last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E mail adress</label>
+                <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-describedby="emailHint">
+                <small id="emailHint" class="form-text text-muted">
+                    Please enter a valid email adress
+                </small>
+            </div>
+
+        </form>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
